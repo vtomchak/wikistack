@@ -7,7 +7,7 @@ app.use(morgan("dev"));
 app.use(express.static(__dirname + "/public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
   res.send("hello world");
 });
 
